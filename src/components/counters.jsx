@@ -23,9 +23,8 @@ class Counters extends Component {
         {this.state.counters.map(counter => (
           <Counter
             key={counter.id}
-            id={counter.id}
             onDelete={this.handleDelete}
-            value={counter.value}
+            counter={counter}
           />
         ))}
       </div>
